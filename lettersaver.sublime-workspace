@@ -1,0 +1,371 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"set",
+				"setChangeData"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"mysq",
+				"mysql_fetch_array"
+			],
+			[
+				"tr",
+				"trim"
+			],
+			[
+				"temp",
+				"templ"
+			],
+			[
+				"lady",
+				"ladyid"
+			],
+			[
+				"top",
+				"top20"
+			],
+			[
+				"rel",
+				"religion"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"sel",
+				"selected"
+			],
+			[
+				"tem",
+				"templ"
+			],
+			[
+				"FO",
+				"form_login"
+			],
+			[
+				"for",
+				"form_login"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"in",
+				"input_login"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"mysql_fe",
+				"mysql_fetch_row"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"btn",
+				"btn_change"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"make",
+				"makeAllStatusZero"
+			],
+			[
+				"my",
+				"my_parser"
+			],
+			[
+				"add",
+				"addItem"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"P",
+				"PARSE_MY_DATA"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"pa",
+				"params"
+			],
+			[
+				"Se",
+				"SELECT"
+			],
+			[
+				"coi",
+				"connection"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 201.0,
+		"selected_items":
+		[
+			[
+				"Package Control: i",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: d",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: l",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control:in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: is",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/mark/workspace/Python/LetterSaver/LetterSaver.py",
+		"/home/mark/.config/sublime-text-2/Packages/User/Git.sublime-settings",
+		"/home/mark/.config/sublime-text-2/Packages/Git/Git.sublime-settings",
+		"/home/mark/server/monitor/admin.php",
+		"/home/mark/workspace/Python/admirer_parser/myForm.py",
+		"/home/mark/workspace/Python/admirer_parser/parser.py",
+		"/home/mark/server/monitor/index.html",
+		"/home/mark/server/monitor/monitor.php",
+		"/home/mark/Documents/Study/3 semestr /OSi/mybash.sh",
+		"/home/mark/my.sh",
+		"/usr/share/screenlets/screenlets-pack-all/Tux/TuxScreenlet.py",
+		"/dev/input/mouse0",
+		"/usr/share/screenlets/screenlets-pack-all/Terminal/TerminalScreenlet.py",
+		"/usr/share/screenlets/screenlets-pack-all/Sysmonitor/SysmonitorScreenlet.py",
+		"/home/mark/workspace/C++/SnakeNotMy/SnakeNotMy.cpp",
+		"/home/mark/Documents/100.sh",
+		"/home/mark/workspace/C++/SnakeNotMy/simple-level.txt",
+		"/home/mark/workspace/ina/third.html",
+		"/home/mark/workspace/ina/first.html",
+		"/home/mark/workspace/ina/first_my.html",
+		"/home/mark/workspace/ina/second.html",
+		"/home/mark/workspace/ina/style.css",
+		"/home/mark/server/adm_dump_30_05/update.php",
+		"/home/mark/server/adm_dump_30_05/update_month.php",
+		"/home/mark/server/adm_dump_30_05/admin.php",
+		"/home/mark/server/monitor/style.css",
+		"/home/mark/server/monitor/save.php",
+		"/home/mark/server/monitor/change.php",
+		"/home/mark/server/monitor/login.php",
+		"/home/mark/server/monitor/incrcounter.php",
+		"/home/mark/server/monitor/zerocounter.php",
+		"/home/mark/server/monitor/makeallzero.php",
+		"/home/mark/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/mark/workspace/Python/videmand.py",
+		"/home/mark/workspace/Python/admirer_parser/data_parser.py",
+		"/home/mark/myform.xml",
+		"/home/mark/myForm.ui",
+		"/home/mark/workspace/Python/Charmingdate_adm/connection.py",
+		"/home/mark/workspace/Python/Charmingdate_adm/xml/ladies.xml",
+		"/home/mark/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/mark/workspace/Python/Charmingdate_adm/cookies.txt",
+		"/usr/local/lib/python2.7/dist-packages/grab/base.py",
+		"/usr/local/lib/python2.7/dist-packages/grab/transport/curl.py",
+		"/home/mark/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/mark/.config/sublime-text-2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Carlos",
+			"utils",
+			"gettext",
+			"utils",
+			"import",
+			"except",
+			"\n	",
+			"left",
+			";",
+			"year",
+			"name",
+			"copy",
+			"double",
+			"[",
+			"ttr({\"checked\" : \"checked\"});",
+			"link",
+			"();\n",
+			"Y:",
+			"618540",
+			"exec",
+			"ctrl+F",
+			"run",
+			"ctrl+/",
+			"ctrl+e",
+			"Grab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 230.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
