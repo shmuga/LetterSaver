@@ -1,4 +1,6 @@
+import sys
 from PySide import QtCore, QtGui
+import LetterSaverWrapper
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -13,8 +15,8 @@ class Ui_Form(object):
         self.horizontalLayoutLoad.setObjectName("horizontalLayoutLoad")
         self.verticalLayoutOk = QtGui.QVBoxLayout()
         self.verticalLayoutOk.setObjectName("verticalLayoutOk")
-        spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayoutOk.addItem(spacerItem)
+        # spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        # self.verticalLayoutOk.addItem(spacerItem)
         self.labelKey = QtGui.QLabel(Form)
         self.labelKey.setAlignment(QtCore.Qt.AlignCenter)
         self.labelKey.setObjectName("labelKey")
@@ -25,8 +27,11 @@ class Ui_Form(object):
         self.pushButtonOpen = QtGui.QPushButton(Form)
         self.pushButtonOpen.setObjectName("pushButtonOpen")
         self.verticalLayoutOk.addWidget(self.pushButtonOpen)
-        spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayoutOk.addItem(spacerItem1)
+        self.pushButtonAll = QtGui.QPushButton(Form)
+        self.pushButtonAll.setObjectName("pushButtonAll")
+        self.verticalLayoutOk.addWidget(self.pushButtonAll)
+        # spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        # self.verticalLayoutOk.addItem(spacerItem1)
         self.verticalLayoutOk.setStretch(0, 2)
         self.verticalLayoutOk.setStretch(1, 1)
         self.verticalLayoutOk.setStretch(2, 1)
@@ -46,7 +51,7 @@ class Ui_Form(object):
         self.horizontalLayoutLoad.setStretch(0, 1)
         self.horizontalLayoutLoad.setStretch(1, 5)
         self.verticalLayoutMain.addLayout(self.horizontalLayoutLoad)
-        self.plainTextEditLetter = QtGui.QPlainTextEdit(Form)
+        self.plainTextEditLetter = QtGui.QTextEdit(Form)
         self.plainTextEditLetter.setObjectName("plainTextEditLetter")
         self.verticalLayoutMain.addWidget(self.plainTextEditLetter)
         self.horizontalLayoutCopy = QtGui.QHBoxLayout()
@@ -80,17 +85,49 @@ class Ui_Form(object):
         self.verticalLayoutMain.setStretch(1, 10)
         self.horizontalLayout.addLayout(self.verticalLayoutMain)
         self.horizontalLayout.setStretch(0, 10)
-
         self.retranslateUi(Form)
+        #handlers
+        self.pushButtonOpen.clicked.connect(self.onOpenClick)
+        self.pushButton.clicked.connect(self.onDelClick)
+        self.pushButtonSave.clicked.connect(self.onSaveClick)
+        self.listWidget.itemClicked.connect(self.onItemChange)
+        self.pushButtonCopy.clicked.connect(self.onCopyClick)
+        self.pushButtonAll.clicked.connect(self.onAllClick)
+        #
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QtGui.QApplication.translate("Form", "LetterSaver", None, QtGui.QApplication.UnicodeUTF8))
         self.labelKey.setText(QtGui.QApplication.translate("Form", "Enter key", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButtonOpen.setText(QtGui.QApplication.translate("Form", "Open", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButtonAll.setText(QtGui.QApplication.translate("Form", "All", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton.setText(QtGui.QApplication.translate("Form", "DEL", None, QtGui.QApplication.UnicodeUTF8))
         self.labelName.setText(QtGui.QApplication.translate("Form", "Copy letter with name", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButtonCopy.setText(QtGui.QApplication.translate("Form", "Copy", None, QtGui.QApplication.UnicodeUTF8))
         self.labelKeysSave.setText(QtGui.QApplication.translate("Form", "Enter keys and press save", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButtonSave.setText(QtGui.QApplication.translate("Form", "Save", None, QtGui.QApplication.UnicodeUTF8))
 
+    def onOpenClick(self):
+        LetterSaverWrapper.onOpenClick(self,self.lineEditKey.text())
+
+    def onDelClick(self):
+        LetterSaverWrapper.onDelClick(self,self.lineEditKey.text())
+
+    def onSaveClick(self):
+        LetterSaverWrapper.onSaveClick(self,self.lineEditKeysSave.text(),self.plainTextEditLetter.toPlainText())
+
+    def onItemChange(self):
+        LetterSaverWrapper.onItemChange(self)
+
+    def onCopyClick(self):
+        LetterSaverWrapper.onCopyClick(self,self.lineEditName.text(),self.plainTextEditLetter.toPlainText())
+
+    def onAllClick(self):
+        LetterSaverWrapper.onAllClick(self)
+if __name__=="__main__":
+    application = QtGui.QApplication(sys.argv)
+    window=QtGui.QWidget()
+    ui=Ui_Form()
+    ui.setupUi(window)
+    window.show() 
+    sys.exit(application.exec_())
