@@ -5,8 +5,7 @@ from PySide import QtGui
 def onOpenClick(self,key):
 	par=XMLwrapper("data/letters.xml")
 	itms=par.getLettersByKey(key)
-	for i in self.listWidget.count():
-		self.listWidget.takeItem(self.listWidget.currentRow())
+	self.listWidget.clear()
 	for i in itms:
 		self.listWidget.addItem(i.strip())
 
@@ -43,7 +42,10 @@ def onCopyClick(self,name,letter):
 	clipboard.setText(letter)
 
 def onAllClick(self):
+	itms={}
 	par=XMLwrapper("data/letters.xml")
-	itms=par.getAllLetters()
+	itms=set(par.getAllLetters())
+	print itms
+	self.listWidget.clear()
 	for i in itms:
 		self.listWidget.addItem(i.strip())
